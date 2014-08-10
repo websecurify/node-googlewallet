@@ -1,0 +1,42 @@
+{
+	"name": "googlewallet",
+	"version": "0.0.1",
+	"author": "Websecurify <contact@websecurify.com>",
+	"description": "Convinience library for Google Wallet.",
+	"license": "MIT",
+	
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/websecurify/node-googlewallet.git"
+	},
+	
+	"keywords": [
+		"payments",
+		"payment",
+		"google",
+		"wallet",
+		"jwt"
+	],
+	
+	"main": "./lib/index.js",
+	
+	"directories": {
+		"lib": "./lib/"
+	},
+	
+	"dependencies": {
+		"jwt-simple": "0.1.0",
+		"moment": "2.1.0"
+	},
+	
+	"devDependencies": {
+		"coffee-script": "1.6.3",
+		"nodeunit": "0.8.0"
+	},
+	
+	"scripts": {
+		"pretest": "cake build",
+		"prepublish": "cake build",
+		"test": "cake test"
+	}
+}
